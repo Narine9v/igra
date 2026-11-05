@@ -1,0 +1,3 @@
+<footer class="site-footer"><div class="wrap"><a class="footer-brand" href="<?php echo esc_url(home_url('/')); ?>">Зерно веры</a><p>Торжество веры и любви: семейный путь</p><span class="ornament" aria-hidden="true">❦</span></div></footer>
+<dialog id="booking-dialog" aria-labelledby="booking-title"><button class="dialog-close" type="button" aria-label="Закрыть">×</button><h2 id="booking-title">Запись скоро откроется</h2><p>Порядок записи уточняется. Информация появится на сайте после согласования с организаторами.</p><button class="button dialog-done" type="button">Понятно</button></dialog>
+<?php wp_footer(); ?></body></html>
