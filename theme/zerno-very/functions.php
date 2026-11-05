@@ -8,8 +8,8 @@ function zv_setup() {
 }
 add_action('after_setup_theme', 'zv_setup');
 function zv_assets() {
-    wp_enqueue_style('zerno-very', get_stylesheet_uri(), array(), '1.0.0');
-    wp_enqueue_script('zerno-very', get_theme_file_uri('assets/site.js'), array(), '1.0.0', true);
+    wp_enqueue_style('zerno-very', get_stylesheet_uri(), array(), '1.1.0');
+    wp_enqueue_script('zerno-very', get_theme_file_uri('assets/site.js'), array(), '1.1.0', true);
 }
 add_action('wp_enqueue_scripts', 'zv_assets');
 function zv_customize($c) {
@@ -22,6 +22,8 @@ function zv_customize($c) {
         $c->add_setting($id, array('sanitize_callback'=>'esc_url_raw'));
         $c->add_control($id, array('label'=>$label,'section'=>'zv_project','type'=>'url'));
     }
+    $c->add_setting('team_page', array('sanitize_callback'=>'absint'));
+    $c->add_control('team_page', array('label'=>'Страница с командой и волонтёрами', 'description'=>'Выберите опубликованную страницу с фотографиями, именами и ролями участников.', 'section'=>'zv_project', 'type'=>'dropdown-pages'));
     $c->add_setting('christmas_time', array('default'=>'Время уточняется','sanitize_callback'=>'sanitize_text_field'));
     $c->add_control('christmas_time', array('label'=>'Время январского мероприятия','section'=>'zv_project','type'=>'text'));
 }

@@ -1,7 +1,7 @@
 /*
 Theme Name: Зерно веры — Семейный путь
 Description: Авторская адаптивная тема семейного рождественского проекта.
-Version: 1.0.0
+Version: 1.1.0
 Requires at least: 6.6
 Requires PHP: 8.1
 Text Domain: zerno-very
@@ -17,3 +17,7 @@ License: GPL-2.0-or-later
 .event-number strong{font-weight:normal;white-space:nowrap}
 @media(max-width:680px){.event-number{display:grid;grid-template-columns:1fr auto;text-align:left;gap:6px 15px}.event-number strong{grid-column:1;grid-row:2;font-size:30px}.event-number small{grid-column:2;grid-row:1}.event-number .ornament{grid-column:2;grid-row:2;text-align:center}}
 .grant{width:fit-content;padding:10px 18px;border-radius:12px;background:rgba(252,242,223,.94)}
+
+.team-intro{max-width:720px;margin:0 auto 32px;text-align:center}.team-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}.team-card{border:1px solid var(--line);border-radius:18px;padding:34px;text-align:center;background:var(--cream)}.team-card h3{font-size:28px}.team-card p{margin-bottom:0;font-size:17px}.team-content{overflow-wrap:anywhere}.team-content img{border-radius:18px}.team-content h2{font-size:34px}.team-content h3{font-size:28px}.team-content .wp-block-columns{gap:28px}.site-header nav{flex-wrap:wrap;justify-content:flex-end}
+@media(max-width:900px) and (min-width:681px){.site-header nav{max-width:55%;gap:10px 16px}}
+@media(max-width:680px){.team-grid{grid-template-columns:1fr;gap:20px}.team-card{padding:28px 22px}.team-content .wp-block-columns{flex-direction:column}.site-header nav{justify-content:flex-start}}

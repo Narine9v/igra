@@ -20,7 +20,7 @@ update_option('timezone_string', 'Europe/Moscow');
 update_option('blog_public', '0');
 switch_theme('zerno-very');
 // Do not delete existing posts or overwrite editorial content.
-foreach (array('foto-i-video'=>'Фото и видео','partnery'=>'Партнёры') as $slug=>$title) {
+foreach (array('foto-i-video'=>'Фото и видео','partnery'=>'Партнёры','komanda-proekta'=>'Команда проекта и волонтёры') as $slug=>$title) {
     if (!get_page_by_path($slug)) { wp_insert_post(array('post_type'=>'page','post_status'=>'draft','post_name'=>$slug,'post_title'=>$title)); }
 }
 echo "WordPress installed; theme active; search indexing disabled locally.\n";
