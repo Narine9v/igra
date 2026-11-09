@@ -1,7 +1,7 @@
 /*
 Theme Name: Зерно веры — Семейный путь
 Description: Авторская адаптивная тема семейного рождественского проекта.
-Version: 1.2.0
+Version: 1.2.1
 Requires at least: 6.6
 Requires PHP: 8.1
 Text Domain: zerno-very
@@ -43,3 +43,7 @@ body{background-color:#fffcf2;background-image:url('assets/olive-ornament.png'),
 @media(max-width:1100px){body{background-size:65px auto}.section.wrap,.section-tint>.wrap{padding-left:24px;padding-right:24px}.section-tint:before,.section-tint:after{width:65px;background-size:65px auto}}
 @media(max-width:680px){body{background-size:34px auto}.hero-copy{padding-top:26px;padding-bottom:15px}.hero h1{font-size:46px}.hero-art{height:390px;background-size:auto 100%;background-position:68% bottom}.hero .star{font-size:54px}.hero-copy:before,.hero-copy:after{width:35px;left:-13px;top:100px;opacity:.5}.hero-copy:after{left:auto;right:-13px}.hero .grant{padding:8px 12px}.section.wrap{width:100%;padding-left:30px;padding-right:30px}.section-tint>.wrap{width:100%;padding-left:30px;padding-right:30px}.section-tint:before,.section-tint:after{width:32px;background-size:32px auto;opacity:.6}#about:before,#experience:before,#team:before,#news:before,#partners:before{left:0;width:28px}#about:after,#experience:after,#team:after,#news:after,#partners:after{right:0;width:28px}.site-footer{background-size:42px auto,42px auto,auto}.hero .angel{width:74px}.hero .subtitle{margin-bottom:20px}}
 @media(max-width:1300px){#about:before,#experience:before,#team:before,#news:before,#partners:before{left:0;width:28px}#about:after,#experience:after,#team:after,#news:after,#partners:after{right:0;width:28px}}
+
+/* Информационное уведомление о технических cookies. */
+.cookie-notice[hidden]{display:none}.cookie-notice{position:fixed;z-index:1000;bottom:20px;left:50%;transform:translateX(-50%);width:min(960px,calc(100% - 32px));display:flex;align-items:center;gap:26px;padding:22px 26px;border:1px solid var(--line);border-radius:18px;background:#fffaf0;box-shadow:0 8px 35px #123e2b26}.cookie-notice>div{flex:1}.cookie-notice p{font-size:15px;line-height:1.55;margin:0 0 5px}.cookie-notice .button{flex-shrink:0;font-size:16px;min-height:46px;padding:10px 24px}.cookie-link{border:0;background:transparent;padding:5px 0;color:var(--green);font:inherit;font-size:14px;text-decoration:underline;text-underline-offset:4px;cursor:pointer}#cookie-details{max-width:620px;max-height:calc(100dvh - 40px);overflow:auto}#cookie-details p{font-size:16px;line-height:1.6}
+@media(max-width:680px){.cookie-notice{bottom:12px;padding:16px;gap:12px;align-items:flex-start}.cookie-notice p{font-size:13px}.cookie-notice .button{padding:10px 15px;font-size:15px}.cookie-link{font-size:13px}#cookie-details h2{font-size:28px}}

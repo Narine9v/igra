@@ -8,8 +8,8 @@ function zv_setup() {
 }
 add_action('after_setup_theme', 'zv_setup');
 function zv_assets() {
-    wp_enqueue_style('zerno-very', get_stylesheet_uri(), array(), '1.2.0');
-    wp_enqueue_script('zerno-very', get_theme_file_uri('assets/site.js'), array(), '1.2.0', true);
+    wp_enqueue_style('zerno-very', get_stylesheet_uri(), array(), '1.2.1');
+    wp_enqueue_script('zerno-very', get_theme_file_uri('assets/site.js'), array(), '1.2.1', true);
 }
 add_action('wp_enqueue_scripts', 'zv_assets');
 function zv_customize($c) {
