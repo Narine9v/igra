@@ -1,7 +1,7 @@
 /*
 Theme Name: Зерно веры — Семейный путь
 Description: Авторская адаптивная тема семейного рождественского проекта.
-Version: 1.1.0
+Version: 1.2.0
 Requires at least: 6.6
 Requires PHP: 8.1
 Text Domain: zerno-very
@@ -21,3 +21,25 @@ License: GPL-2.0-or-later
 .team-intro{max-width:720px;margin:0 auto 32px;text-align:center}.team-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}.team-card{border:1px solid var(--line);border-radius:18px;padding:34px;text-align:center;background:var(--cream)}.team-card h3{font-size:28px}.team-card p{margin-bottom:0;font-size:17px}.team-content{overflow-wrap:anywhere}.team-content img{border-radius:18px}.team-content h2{font-size:34px}.team-content h3{font-size:28px}.team-content .wp-block-columns{gap:28px}.site-header nav{flex-wrap:wrap;justify-content:flex-end}
 @media(max-width:900px) and (min-width:681px){.site-header nav{max-width:55%;gap:10px 16px}}
 @media(max-width:680px){.team-grid{grid-template-columns:1fr;gap:20px}.team-card{padding:28px 22px}.team-content .wp-block-columns{flex-direction:column}.site-header nav{justify-content:flex-start}}
+
+/* 1.2 — иллюстрация с семьёй и золотые растительные поля. */
+body{background-color:#fffcf2;background-image:url('assets/olive-ornament.png'),url('assets/olive-ornament.png');background-position:left top,right 480px;background-size:105px auto;background-repeat:repeat-y;}
+.site-header{background:rgba(255,252,242,.94)}
+.hero{min-height:0;background:#fff7e7;display:flex;flex-direction:column}
+.hero-copy{padding-top:28px;padding-bottom:28px;background:transparent}
+.hero-art{position:relative;inset:auto;z-index:0;flex:none;height:clamp(440px,43vw,620px);background:linear-gradient(to bottom,#fff7e7 0%,rgba(255,247,231,0) 22%),url('assets/family-christmas.png') center 78%/cover no-repeat;}
+.hero-copy:before,.hero-copy:after{content:'';position:absolute;top:0;bottom:0;width:95px;background:url('assets/olive-ornament.png') center/contain no-repeat;opacity:.65;pointer-events:none;z-index:-1}
+.hero-copy:before{left:-90px}.hero-copy:after{right:-90px;transform:scaleX(-1)}
+.hero h1{font-size:clamp(48px,5.5vw,76px)}.hero .star{font-size:62px}.hero .grant{background:transparent;margin-top:20px}
+.section{position:relative;isolation:isolate}
+.section.wrap{padding-left:42px;padding-right:42px;background:rgba(255,252,242,.94)}
+.section-tint{background-color:rgba(247,239,223,.92);overflow:hidden}
+.section-tint:before,.section-tint:after{content:'';position:absolute;inset:20px auto 20px 0;width:95px;z-index:-1;pointer-events:none;background:url('assets/olive-ornament.png') center top/95px auto repeat-y;opacity:.45}
+.section-tint:after{left:auto;right:0;transform:scaleX(-1)}
+.section-tint>.wrap{padding-left:42px;padding-right:42px}
+#about:before,#experience:before,#team:before,#news:before,#partners:before{content:'';position:absolute;top:45px;bottom:45px;left:-38px;width:80px;z-index:-1;pointer-events:none;background:url('assets/olive-ornament.png') center/contain no-repeat;opacity:.55}
+#about:after,#experience:after,#team:after,#news:after,#partners:after{content:'';position:absolute;top:110px;bottom:0;right:-38px;width:80px;z-index:-1;pointer-events:none;background:url('assets/olive-ornament.png') center/contain no-repeat;opacity:.55;transform:scaleX(-1)}
+.site-footer{background-image:url('assets/olive-ornament.png'),url('assets/olive-ornament.png'),linear-gradient(#fffcf2,#efe0c1);background-position:left center,right center,center;background-size:80px auto,80px auto,auto;background-repeat:no-repeat;}
+@media(max-width:1100px){body{background-size:65px auto}.section.wrap,.section-tint>.wrap{padding-left:24px;padding-right:24px}.section-tint:before,.section-tint:after{width:65px;background-size:65px auto}}
+@media(max-width:680px){body{background-size:34px auto}.hero-copy{padding-top:26px;padding-bottom:15px}.hero h1{font-size:46px}.hero-art{height:390px;background-size:auto 100%;background-position:68% bottom}.hero .star{font-size:54px}.hero-copy:before,.hero-copy:after{width:35px;left:-13px;top:100px;opacity:.5}.hero-copy:after{left:auto;right:-13px}.hero .grant{padding:8px 12px}.section.wrap{width:100%;padding-left:30px;padding-right:30px}.section-tint>.wrap{width:100%;padding-left:30px;padding-right:30px}.section-tint:before,.section-tint:after{width:32px;background-size:32px auto;opacity:.6}#about:before,#experience:before,#team:before,#news:before,#partners:before{left:0;width:28px}#about:after,#experience:after,#team:after,#news:after,#partners:after{right:0;width:28px}.site-footer{background-size:42px auto,42px auto,auto}.hero .angel{width:74px}.hero .subtitle{margin-bottom:20px}}
+@media(max-width:1300px){#about:before,#experience:before,#team:before,#news:before,#partners:before{left:0;width:28px}#about:after,#experience:after,#team:after,#news:after,#partners:after{right:0;width:28px}}
